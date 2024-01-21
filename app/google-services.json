@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "378329015545",
+    "project_id": "smart-formulas",
+    "storage_bucket": "smart-formulas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378329015545:android:0f43fc2c4434bfbb3d2e28",
+        "android_client_info": {
+          "package_name": "com.example.smartformulas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKAk6nwXoscgJ9CB3FuN60zjRAUcNpeTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
