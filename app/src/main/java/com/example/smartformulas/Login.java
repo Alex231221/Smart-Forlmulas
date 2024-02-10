@@ -12,7 +12,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.smartformulas.MainActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
@@ -58,7 +57,7 @@ public class Login extends AppCompatActivity {
             }
         });
 
-        buttonLogin.setOnClickListener((new View.OnClickListener() {
+        buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -90,7 +89,6 @@ public class Login extends AppCompatActivity {
                                 }
                             }
                         });
-
             }
         });
     }
