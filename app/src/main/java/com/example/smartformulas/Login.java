@@ -61,18 +61,16 @@ public class Login extends AppCompatActivity {
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                boolean isValid = true;
                 progressBar.setVisibility(View.VISIBLE);
-                String email, password;
-                email = String.valueOf(editTextEmail.getText());
-                password = String.valueOf(editTextPassword.getText());
-                if (TextUtils.isEmpty(email)) {
+                String email = editTextEmail.getText().toString(), password = editTextPassword.getText().toString();
+                if (email.isEmpty()) {
                     Toast.makeText(Login.this, "Enter email", Toast.LENGTH_SHORT).show();
-                    return;
+                   isValid = false;
                 }
-                if (TextUtils.isEmpty(password)) {
+                 else if (password.isEmpty()){
                     Toast.makeText(Login.this, "Enter password", Toast.LENGTH_SHORT).show();
-                    return;
+                  isValid = false;
                 }
                 mAuth.signInWithEmailAndPassword(email, password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {

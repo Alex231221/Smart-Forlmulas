@@ -26,15 +26,15 @@
         android:hint="Email"/>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:startIconDrawable="@drawable/ic_email_icon">
+        android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
-            android:drawableStart="@drawable/baseline_email_24"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/mail_fill0_wght400_grad0_opsz24"
             android:hint="@string/email"
             android:padding="10dp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -48,10 +48,10 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/password"
             android:layout_marginTop="20sp"
             android:padding="10sp"
-            android:drawableStart="@drawable/baseline_lock_24"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/lock_fill0_wght400_grad0_opsz24"
             />
     </com.google.android.material.textfield.TextInputLayout>
 

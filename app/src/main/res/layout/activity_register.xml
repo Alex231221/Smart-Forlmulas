@@ -28,7 +28,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
-            android:drawableStart="@drawable/baseline_email_24"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/mail_fill0_wght400_grad0_opsz24"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -41,7 +42,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
-            android:drawableStart="@drawable/baseline_email_24"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/lock_fill0_wght400_grad0_opsz24"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -53,8 +55,9 @@
             android:id="@+id/password1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/password"
-            android:drawableStart="@drawable/baseline_lock_24"/>
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/lock_fill0_wght400_grad0_opsz24"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <ProgressBar
@@ -65,8 +68,9 @@
 
     <Button
         android:id="@+id/btn_register"
+        android:layout_marginTop="15sp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50sp"
         android:text="@string/register" />
 
     <TextView

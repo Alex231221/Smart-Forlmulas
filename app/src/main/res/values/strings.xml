@@ -7,4 +7,5 @@
     <string name="click_to_login">Click to login</string>
     <string name="click_to_register">Don\'t have account? Register now</string>
     <string name="logout">logout</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>
